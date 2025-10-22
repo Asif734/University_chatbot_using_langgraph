@@ -44,5 +44,19 @@
       "question": "what is the admission process of bup?",
       "answer": "Anyone can gain admission to BUP by following the admission test."
     }
+  ],
+  "123": [
+    {
+      "question": "hi",
+      "answer": "Hi! \ud83d\ude0a What would you like to know?"
+    },
+    {
+      "question": "what is the average cpga of Asif",
+      "answer": "I don\u2019t know"
+    },
+    {
+      "question": "what is the average cgpa of Asif",
+      "answer": "The average CGPA of Asifuzzaman Asif is 3.75."
+    }
   ]
 }
