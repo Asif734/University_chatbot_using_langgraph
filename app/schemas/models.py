@@ -2,6 +2,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 class QueryRequest(BaseModel):
+    user_id: str
     question: str
     top_k: Optional[int] = 3
 
