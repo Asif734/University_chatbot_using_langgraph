@@ -58,5 +58,35 @@
       "question": "what is the average cgpa of Asif",
       "answer": "The average CGPA of Asifuzzaman Asif is 3.75."
     }
+  ],
+  "001": [
+    {
+      "question": "what is my cgpa?",
+      "answer": "I couldn\u2019t find that information in the records."
+    },
+    {
+      "question": "what is the cgpa of Asif?",
+      "answer": "The CGPA of Asifuzzaman Asif for Sem5 is 3.85. His semester-wise CGPA records are: sem1: 3.5, sem2: 3.7, sem3: 3.9, sem4: 3.8, sem5: 3.85."
+    },
+    {
+      "question": "Hi, My name is Asif",
+      "answer": "Hi! \ud83d\ude0a What would you like to know?"
+    },
+    {
+      "question": "What is my name?",
+      "answer": "I don't know."
+    },
+    {
+      "question": "What is the cgpa of Asif?",
+      "answer": "I understand you're looking for Asif's CGPA, but as an AI, I don't have access to personal or private information about individuals, including their academic records. That kind of data is confidential."
+    },
+    {
+      "question": "what is the capital of mongolia?",
+      "answer": "I don\u2019t know"
+    },
+    {
+      "question": "i am feeling depressed",
+      "answer": "Oh, I'm truly sorry to hear you're feeling depressed. That sounds incredibly tough, and it takes a lot of strength to even express that.\n\nPlease know you're not alone in this, and it's okay to feel this way. I'm here to listen if you'd like to talk more about what's on your mind.\n\nDepression can be really overwhelming, and often, getting professional support can make a significant difference. Have you considered reaching out to a therapist or counselor, or even talking to your doctor? There are resources available that can offer more specialized help, and I can share some if you'd like."
+    }
   ]
 }

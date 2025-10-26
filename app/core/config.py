@@ -49,6 +49,8 @@ class Settings:
     PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+    #JWT token
+    JWT_SECRET_KEY="Bup2002@bup#1232$"
     # Initialize Pinecone client
     @property
     def pinecone_client(self):

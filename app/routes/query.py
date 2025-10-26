@@ -3,6 +3,7 @@ from app.schemas.models import QueryRequest, QueryResponse, SourceDocument
 from app.utils.graph import rag_graph
 from app.services.retriever_service import retriever
 from app.services.memory_service import MemoryService
+from app.utils.authentication import verify_user_token
 # from app.services.redis_service import RedisCacheService
 
 
@@ -12,7 +13,7 @@ memory_service= MemoryService()
 # redis_service= RedisCacheService()
 
 @router.post("/query", response_model=QueryResponse)
-async def query_documents(request: QueryRequest):
+async def query_documents(request: QueryRequest, user_token: str | None= None):
     try:
         # Invoke RAG graph
         # cached_answer= redis_service.get_answer(request.question)
@@ -24,8 +25,21 @@ async def query_documents(request: QueryRequest):
         # )
         #     return QueryResponse(answer= cached_answer, sources= [])
 
+        is_authenticated= False
 
-        result = rag_graph.invoke({"question": request.question})
+        if user_token:
+            is_authenticated= verify_user_token(user_token)
+
+        state= {
+            "question": request.question,
+            "context": None,
+            "docs": None,
+            "answer": None,
+            "route": None,
+            "is_authenticated": is_authenticated
+        }
+
+        result = rag_graph.invoke(state)
 
         # Extract docs safely
         docs = result.get("docs") or []  # ← defaults to empty list if None
