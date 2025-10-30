@@ -42,7 +42,7 @@ class Settings:
     LLM_PROVIDER = os.getenv("LLM_PROVIDER", "gemini")
 
     # Default LLM Models
-    OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gemma3:4b")
+    # OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "gemma3:4b")
     GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 
     # API Keys (read from .env)

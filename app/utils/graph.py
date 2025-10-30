@@ -3,7 +3,7 @@ from typing import List, Any, Literal, Annotated, TypedDict
 from langgraph.graph import StateGraph, END
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain_ollama import OllamaLLM
+# from langchain_ollama import OllamaLLM
 from app.services.retriever_service import retriever
 from app.core.config import settings
 
@@ -13,15 +13,15 @@ from app.core.config import settings
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 def initialize_llm(settings):
-    if settings.LLM_PROVIDER.lower() == "gemini":
-        llm = ChatGoogleGenerativeAI(
-            model=settings.GEMINI_MODEL,
-            google_api_key=settings.GEMINI_API_KEY,
-            temperature=0.7,
-        )
-    else:
-        llm = OllamaLLM(model=settings.OLLAMA_MODEL, temperature=0.7)
-    return llm
+    # if settings.LLM_PROVIDER.lower() == "gemini":
+    llm = ChatGoogleGenerativeAI(
+        model=settings.GEMINI_MODEL,
+        google_api_key=settings.GEMINI_API_KEY,
+        temperature=0.7,
+    )
+    # else:
+    #     llm = OllamaLLM(model=settings.OLLAMA_MODEL, temperature=0.7)
+    # return llm
 
 # Use this everywhere instead of direct OllamaLLM
 llm = initialize_llm(settings)
