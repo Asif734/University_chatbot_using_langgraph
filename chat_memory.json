@@ -96,5 +96,23 @@
       "question": "what is the cgpa of Asif?",
       "answer": "Asifuzzaman Asif's CGPA for:\n*   Semester 1: 3.5\n*   Semester 2: 3.7\n*   Semester 3: 3.9\n*   Semester 4: 3.8\n*   Semester 5: 3.85"
     }
+  ],
+  "abc": [
+    {
+      "question": "Hi, I am asif",
+      "answer": "Hi! \ud83d\ude0a What would you like to know?"
+    },
+    {
+      "question": "Tell me something about bup",
+      "answer": "Hi! \ud83d\ude0a What would you like to know?"
+    },
+    {
+      "question": "Tell me something about bup",
+      "answer": "Hi! \ud83d\ude0a What would you like to know?"
+    },
+    {
+      "question": "what is the admission process?",
+      "answer": "Anyone can gain admission to Bangladesh University of Professionals by following the admission test."
+    }
   ]
 }

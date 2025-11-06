@@ -19,13 +19,14 @@ def initialize_llm(settings):
         google_api_key=settings.GEMINI_API_KEY,
         temperature=0.7,
     )
+    return llm
     # else:
     #     llm = OllamaLLM(model=settings.OLLAMA_MODEL, temperature=0.7)
     # return llm
 
 # Use this everywhere instead of direct OllamaLLM
 llm = initialize_llm(settings)
-
+print(llm)
 # -----------------------------
 #  Define RAG State Schema
 # -----------------------------
