@@ -14,7 +14,7 @@ app.add_middleware(
 )
 
 
-
+#---------#
 @app.get("/")
 async def get_root():
     return "Server started Successfully"
