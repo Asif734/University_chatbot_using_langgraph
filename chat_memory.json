@@ -114,5 +114,23 @@
       "question": "what is the admission process?",
       "answer": "Anyone can gain admission to Bangladesh University of Professionals by following the admission test."
     }
+  ],
+  "hhg": [
+    {
+      "question": "hi, i am Asif",
+      "answer": "Hi! \ud83d\ude0a What would you like to know?"
+    },
+    {
+      "question": "what is the admission form fee for bachelor programme?",
+      "answer": "I don\u2019t know. The context does not specify the admission form fee for the bachelor programme."
+    },
+    {
+      "question": "How much per application cost?",
+      "answer": "BDT. 1050.00 + payment gateway charge per faculty."
+    },
+    {
+      "question": " How can I get an admit card?",
+      "answer": "You can get your Admit Card by logging in to the admission site (admission.bup.edu.bd)."
+    }
   ]
 }
